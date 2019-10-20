@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(243, 208, 144);
+}
+
+h3{
+   color: violet;
+}
+p{
+    color: teal;
+}
+header{
+    text-align: center;
+    font-size: 400%;
+}
