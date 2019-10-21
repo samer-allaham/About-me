@@ -12,3 +12,13 @@ header{
     text-align: center;
     font-size: 400%;
 }
+ol{
+    color: rgb(110, 29, 29);
+ 
+}
+ul{
+    color: royalblue;
+}
+header{
+    color: rgb(109, 109, 109);
+}
