@@ -184,7 +184,7 @@ for (var z = 0; z < options.length; z++) {
     
     
     
-    var maxTries1 = 6;
+    var maxTries1 = 5;
     
     var counter = 0;
     
