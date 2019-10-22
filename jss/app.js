@@ -5,9 +5,9 @@ var user = prompt('Hi there, whats your name?');
 
 while (!user) { user = prompt('really whats your name we\'ll need it later') };
 
-alert('hello' + ' ' + user + ' ' + ' and welcome to my page, im going to ask you a few questions about me, Are you ready?');
+alert(' hello ' +  user +  ' and welcome to my page, im going to ask you a few questions about me, Are you ready?');
 
-alert('great');
+alert(' great ');
 
 console.log('user', user);
 
@@ -61,7 +61,7 @@ console.log('user', user);
 //     //console.log('A bit obvious' + ' '+ user+ ' ' + 'but good job none the less'+food)
 
 // }
-
+function aboutme(){
 var questions = [
     [
         'is my middle and third name the same?',
@@ -92,8 +92,8 @@ var questions = [
     ],
     [
         ' is mlokheyeh my favourite food? ',
-        ' No' + ' ' + user + ' ' + ',no one likes mlokheyeh... ',
-        ' A bit obvious ' + ' ' + user + ' ' + ' ,but good job none the less ',
+        ' No '  + user +  ' ,no one likes mlokheyeh... ',
+        ' A bit obvious ' +  user +  ' ,but good job none the less ',
         false
     ],
 ];
@@ -112,10 +112,10 @@ for (var i = 0; i < questions.length; i++) {
     switch (answer) {
         case 'YES':
         case 'Y':
-            if(question[3]==true){
+            if(YesIstrue==true){
                 userPoints++;
             }
-            alert(yesReply+' '+'your score is'+' ' +userPoints);
+            alert(yesReply+ ' your score is ' +userPoints);
             break;
 
         case 'NO':
@@ -123,17 +123,21 @@ for (var i = 0; i < questions.length; i++) {
                 if(question[3]==false){
                     userPoints++;
                 }
-            alert(noReply +' '+'your score is'+' '+userPoints);
+            alert(noReply +' your score is '+ userPoints);
             break;
         default:
             alert('keep the answer to \'yes\' or \'no\' only please')
     }
 
-}
+}return question; 
+} 
+aboutme();
 
 
 
  //Question 6
+ function guessNum()
+ {
 var userNumber =5;
 var maxTries=5;
 var count=0;
@@ -142,16 +146,16 @@ var randomNumber=Math.floor(Math.random() * userNumber)+1;
 
 while (picks !== randomNumber) {
 
-    var picks=prompt('pick a number between 1 and '+userNumber);
+    var picks=prompt(' pick a number between 1 and '+userNumber);
     count +=1;
 
     if(count >maxTries){
-        document.write('the correct answer is'+' '+randomNumber);
+        document.write(' the correct answer is ' + randomNumber);
     break;
     }
     if (picks==randomNumber){
         userPoints++
-        alert ('good job!'+' '+'your score is'+' ' +userPoints)
+        alert (' good job! '+' your score is '+ userPoints)
         break;
        
     }
@@ -164,12 +168,14 @@ while (picks !== randomNumber) {
         
     }
     
+}return picks;
 }
+guessNum()
 
 
 
  //Question 7 
-
+function guessQuizz(){
 var options = [
     [   'whats a thing that flies without wings?',
         'cloud',
@@ -201,23 +207,23 @@ for (var z = 0; z < options.length; z++) {
         counter += 1;
           
         if (counter > maxTries1) {
-            document.write('<p>'+'the correct answers are'+' ' + option[1]+' ,' +option[2]+' ,'+option[3]+'</p');
+            document.write('<p>'+' the correct answers are '+ option[1]+' ,' +option[2]+' ,'+option[3]+'</p');
             break;
         }
         if (pick ==ansCloud) {
             userPoints++
-            alert('goodjob!' + ' ' + 'your score is' + ' ' + userPoints)
+            alert(' goodjob! '  + ' your score is ' + userPoints)
             break;
         }
 
         if (pick ==ansPlasticBag) {
             userPoints++
-            alert('goodjob!' + ' ' + 'your score is' + ' ' + userPoints)
+            alert(' goodjob! ' +  ' your score is ' +  userPoints)
             break;
         }
         if (pick ==ansKite) {
             userPoints++
-            alert('goodjob!' + ' ' + 'your score is' + ' ' + userPoints)
+            alert(' goodjob! ' +  ' your score is ' +  userPoints)
             break;
         
         }
@@ -226,7 +232,9 @@ for (var z = 0; z < options.length; z++) {
         }
     }
 
+}return options;
 }
+guessQuizz();
 alert('your score is'+' ' +userPoints+'/7');
 
 
