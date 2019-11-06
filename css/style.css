@@ -1,12 +1,13 @@
 body{
     background-color: rgb(243, 208, 144);
     background-repeat: no-repeat;
-    background-size: cover; 
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf5f3ZOGtXY--7Hdi4iTgAOlgo_gF2GeYH15jAZDAm7iidb-gE);
+    background-size: 100%;
+    background-image: url(https://img.theculturetrip.com/1024x/smart/images/56-3701450-780px-claude-monet-impression-soleil-levant-1872.jpg);
+    background-position: center;
 }
 
 h3{
-   color: violet;
+   color: rgb(13, 114, 0);
 }
 p{
     color: black;
@@ -20,8 +21,8 @@ ol{
  
 }
 ul{
-    color: royalblue;
+    color: rgb(8, 64, 230);
 }
 header{
-    color: rgb(109, 109, 109);
+    color: rgb(51, 5, 5);
 }
