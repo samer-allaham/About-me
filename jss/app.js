@@ -73,7 +73,7 @@ function aboutme() {
 
         [
             ' is my favourite color green? ',
-            ' sry, wrong answer ',
+            ' sorry, wrong answer ',
             ' nice! ',
             false
         ],
@@ -132,7 +132,7 @@ function aboutme() {
     } return question;
 }
 aboutme();
-
+ 
 
 
 //Question 6
@@ -149,7 +149,7 @@ function guessNum() {
         count += 1;
 
         if (count > maxTries) {
-            document.write('<p>' + ' the correct answer is ' + randomNumber + '</p>');
+            document.write('<p>' + ' The correct answer is ' + randomNumber + '</p>');
             break;
         }
         if (picks == randomNumber) {
@@ -206,7 +206,7 @@ function guessQuizz() {
             counter += 1;
 
             if (counter > maxTries1) {
-                document.write('<p>' + ' the correct answers are ' + option[1] + ' ,' + option[2] + ' ,' + option[3] + '</p');
+                document.write('<p>' + ' The correct answers are ' + option[1] + ' ,' + option[2] + ' ,' + option[3] +'.'+ '</p');
                 break;
             }
             if (pick == ansCloud) {
@@ -234,7 +234,7 @@ function guessQuizz() {
     } return options;
 }
 guessQuizz();
-alert('your score is' + ' ' + userPoints + '/7');
+alert(user+','+' your score is' + ' ' + userPoints + '/7 Thanks for playing :)');
 
 
 
