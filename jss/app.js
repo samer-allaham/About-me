@@ -5,7 +5,7 @@ var user = prompt('Hi there, whats your name?');
 
 while (!user) { user = prompt('really whats your name we\'ll need it later') };
 
-alert(' hello ' +  user +  ' and welcome to my page, im going to ask you a few questions about me, Are you ready?');
+alert(' hello ' + user + ' and welcome to my page, im going to ask you a few questions about me, Are you ready?');
 
 alert(' great ');
 
@@ -61,181 +61,180 @@ console.log('user', user);
 //     //console.log('A bit obvious' + ' '+ user+ ' ' + 'but good job none the less'+food)
 
 // }
-function aboutme(){
-var questions = [
-    [
-        'is my middle and third name the same?',
-        ' Good job! ',
-        ' wrong answer ',
-        true
+function aboutme() {
+    var questions = [
+        [
+            'is my middle and third name the same?',
+            ' Good job! ',
+            ' wrong answer ',
+            true
 
-    ],
+        ],
 
-    [
-        ' is my favourite color green? ',
-        ' sry, wrong answer ',
-        ' nice! ',
-        false
-    ],
-    [
-        ' do you think drawing is my hobby? ',
-        ' Great! ',
-        ' oops, Wrong answer ',
-        true
+        [
+            ' is my favourite color green? ',
+            ' sry, wrong answer ',
+            ' nice! ',
+            false
+        ],
+        [
+            ' do you think drawing is my hobby? ',
+            ' Great! ',
+            ' oops, Wrong answer ',
+            true
 
-    ],
-    [
-        ' Do i have a drivers license? ',
-        ' good job! ',
-        'Nope, wrong answer',
-        true
-    ],
-    [
-        ' is mlokheyeh my favourite food? ',
-        ' No '  + user +  ' ,no one likes mlokheyeh... ',
-        ' A bit obvious ' +  user +  ' ,but good job none the less ',
-        false
-    ],
-];
-for (var i = 0; i < questions.length; i++) {
-    
-    var question = questions[i];
+        ],
+        [
+            ' Do i have a drivers license? ',
+            ' good job! ',
+            'Nope, wrong answer',
+            true
+        ],
+        [
+            ' is mlokheyeh my favourite food? ',
+            ' No ' + user + ' ,no one likes mlokheyeh... ',
+            ' A bit obvious ' + user + ' ,but good job none the less ',
+            false
+        ],
+    ];
+    for (var i = 0; i < questions.length; i++) {
 
-    var answer = prompt(question[0]);
-    
-    answer = answer.toUpperCase();
-    
-    var yesReply = question[1];
-    
-    var noReply = question[2];
-    var YesIstrue=question[3];
-    switch (answer) {
-        case 'YES':
-        case 'Y':
-            if(YesIstrue==true){
-                userPoints++;
-            }
-            alert(yesReply+ ' your score is ' +userPoints);
-            break;
+        var question = questions[i];
 
-        case 'NO':
-        case 'N':
-                if(question[3]==false){
+        var answer = prompt(question[0]);
+
+        answer = answer.toUpperCase();
+
+        var yesReply = question[1];
+
+        var noReply = question[2];
+        var YesIstrue = question[3];
+        switch (answer) {
+            case 'YES':
+            case 'Y':
+                if (YesIstrue == true) {
                     userPoints++;
                 }
-            alert(noReply +' your score is '+ userPoints);
-            break;
-        default:
-            alert('keep the answer to \'yes\' or \'no\' only please')
-    }
+                alert(yesReply + ' your score is ' + userPoints);
+                break;
 
-}return question; 
-} 
+            case 'NO':
+            case 'N':
+                if (question[3] == false) {
+                    userPoints++;
+                }
+                alert(noReply + ' your score is ' + userPoints);
+                break;
+            default:
+                alert('keep the answer to \'yes\' or \'no\' only please')
+        }
+
+    } return question;
+}
 aboutme();
 
 
 
- //Question 6
- function guessNum()
- {
-var userNumber =5;
-var maxTries=5;
-var count=0;
+//Question 6
+function guessNum() {
+    var userNumber = 5;
+    var maxTries = 5;
+    var count = 0;
 
-var randomNumber=Math.floor(Math.random() * userNumber)+1;
+    var randomNumber = Math.floor(Math.random() * userNumber) + 1;
 
-while (picks !== randomNumber) {
+    while (picks !== randomNumber) {
 
-    var picks=prompt(' pick a number between 1 and '+userNumber);
-    count +=1;
+        var picks = prompt(' pick a number between 1 and ' + userNumber);
+        count += 1;
 
-    if(count >maxTries){
-        document.write(' the correct answer is ' + randomNumber);
-    break;
-    }
-    if (picks==randomNumber){
-        userPoints++
-        alert (' good job! '+' your score is '+ userPoints)
-        break;
-       
-    }
-    if (picks>randomNumber) {
-        alert('too high');
-        
-    }
-    if (picks<randomNumber) {
-        alert('too low');
-        
-    }
-    
-}return picks;
+        if (count > maxTries) {
+            document.write('<p>' + ' the correct answer is ' + randomNumber + '</p>');
+            break;
+        }
+        if (picks == randomNumber) {
+            userPoints++
+            alert(' good job! ' + ' your score is ' + userPoints)
+            break;
+
+        }
+        if (picks > randomNumber) {
+            alert('too high');
+
+        }
+        if (picks < randomNumber) {
+            alert('too low');
+
+        }
+
+    } return picks;
 }
 guessNum()
 
 
 
- //Question 7 
-function guessQuizz(){
-var options = [
-    [   'whats a thing that flies without wings?',
-        'cloud',
-        'plastic bag',
-        'kite']
-]
-for (var z = 0; z < options.length; z++) {
-    
-    var option = options[z];
-    
-    // var pick = prompt(option[0]);
-    
-    
-    
-    var maxTries1 = 5;
-    
-    var counter = 0;
-    
-    var ansCloud =option[1];
-    
-    var ansPlasticBag=option[2];
-    
-    var ansKite=option[3];
-    
-    while (pick !== options[z]) {
+//Question 7 
+function guessQuizz() {
+    var options = [
+        ['whats a thing that flies without wings?',
+            'cloud',
+            'plastic bag',
+            'kite']
+    ]
+    for (var z = 0; z < options.length; z++) {
 
-        var pick= prompt(option[0]);
-        pick = pick.toLowerCase();
-        counter += 1;
-          
-        if (counter > maxTries1) {
-            document.write('<p>'+' the correct answers are '+ option[1]+' ,' +option[2]+' ,'+option[3]+'</p');
-            break;
-        }
-        if (pick ==ansCloud) {
-            userPoints++
-            alert(' goodjob! '  + ' your score is ' + userPoints)
-            break;
+        var option = options[z];
+
+        // var pick = prompt(option[0]);
+
+
+
+        var maxTries1 = 5;
+
+        var counter = 0;
+
+        var ansCloud = option[1];
+
+        var ansPlasticBag = option[2];
+
+        var ansKite = option[3];
+
+        while (pick !== options[z]) {
+
+            var pick = prompt(option[0]);
+            pick = pick.toLowerCase();
+            counter += 1;
+
+            if (counter > maxTries1) {
+                document.write('<p>' + ' the correct answers are ' + option[1] + ' ,' + option[2] + ' ,' + option[3] + '</p');
+                break;
+            }
+            if (pick == ansCloud) {
+                userPoints++
+                alert(' goodjob! ' + ' your score is ' + userPoints)
+                break;
+            }
+
+            if (pick == ansPlasticBag) {
+                userPoints++
+                alert(' goodjob! ' + ' your score is ' + userPoints)
+                break;
+            }
+            if (pick == ansKite) {
+                userPoints++
+                alert(' goodjob! ' + ' your score is ' + userPoints)
+                break;
+
+            }
+            if (pick !== ansKite && pick !== ansCloud && pick !== ansPlasticBag) {
+                alert('wrong answer')
+            }
         }
 
-        if (pick ==ansPlasticBag) {
-            userPoints++
-            alert(' goodjob! ' +  ' your score is ' +  userPoints)
-            break;
-        }
-        if (pick ==ansKite) {
-            userPoints++
-            alert(' goodjob! ' +  ' your score is ' +  userPoints)
-            break;
-        
-        }
-        if (pick!==ansKite&&pick!==ansCloud&&pick!==ansPlasticBag) {
-            alert('wrong answer')
-        }
-    }
-
-}return options;
+    } return options;
 }
 guessQuizz();
-alert('your score is'+' ' +userPoints+'/7');
+alert('your score is' + ' ' + userPoints + '/7');
 
 
 
@@ -275,7 +274,7 @@ alert('your score is'+' ' +userPoints+'/7');
 //     else if (correctAns <'3') {
 //         alert("too low");
 //     }
-   
+
 
 
 //     else if (correctAns) {
