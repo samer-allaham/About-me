@@ -7,22 +7,36 @@ body{
 }
 
 h3{
-   color: rgb(13, 114, 0);
+   color: rgb(143, 219, 0);
+   font-size: 220%;
 }
 p{
-    color: black;
+    color: rgb(145, 0, 0);
+    font-size: 220%;
+    
 }
 header{
     text-align: center;
     font-size: 400%;
 }
 ol{
-    color: rgb(110, 29, 29);
+    color: rgb(255, 170, 72);
+    font-style: italic;
+    font-size: 150%;
  
 }
 ul{
-    color: rgb(8, 64, 230);
+    color: rgb(235, 198, 245);
+    font-style: italic;
+    font-size: 150%;
+    font-style: oblique;
 }
 header{
     color: rgb(51, 5, 5);
+    font-style: italic;;
+}
+
+h4{
+    font-size: 200%;
+    color: rgb(50, 200, 205);
 }
